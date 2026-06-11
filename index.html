@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Videozinho❣️</title>
+
+<style>
+body{
+    margin:0;
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:linear-gradient(135deg,#000000,#1a0000,#000000);
+    font-family:Arial,sans-serif;
+    color:white;
+}
+
+.caixa{
+    text-align:center;
+    background:rgba(20,20,20,0.9);
+    padding:40px;
+    border-radius:20px;
+    border:2px solid gold;
+    box-shadow:0 0 25px rgba(255,215,0,0.3);
+}
+
+h1{
+    color:gold;
+    margin-bottom:25px;
+    font-size:48px;
+}
+
+input{
+    padding:12px;
+    border-radius:10px;
+    border:1px solid gold;
+    background:#111;
+    color:white;
+    font-size:18px;
+}
+
+button{
+    padding:12px 20px;
+    border:none;
+    border-radius:10px;
+    background:#b30000;
+    color:white;
+    font-size:18px;
+    cursor:pointer;
+    margin-left:8px;
+}
+
+button:hover{
+    background:#d40000;
+}
+
+#conteudo{
+    display:none;
+    margin-top:30px;
+}
+
+.linkvideo{
+    display:inline-block;
+    margin-top:15px;
+    padding:14px 24px;
+    background:#b30000;
+    color:white;
+    text-decoration:none;
+    border-radius:12px;
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="caixa">
+
+<h1>Videozinho❣️</h1>
+
+<p>Introduz a palavra-passe:</p>
+
+<input type="password" id="pass">
+<button onclick="verificar()">Entrar</button>
+
+<div id="conteudo">
+    <h2>Videozinho desbloqueado ❣️</h2>
+
+```
+<a class="linkvideo" href="LINK_DO_VIDEO" target="_blank">
+    Ver o vídeo ❣️
+</a>
+```
+
+</div>
+
+</div>
+
+<script>
+function verificar(){
+    if(document.getElementById("pass").value=="borboleta"){
+        document.getElementById("conteudo").style.display="block";
+    }else{
+        alert("Palavra-passe incorreta!");
+    }
+}
+</script>
+
+</body>
+</html>
