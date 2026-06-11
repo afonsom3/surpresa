@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Surpresa ❤️</title>
+<style>
+body{
+    font-family: Arial, sans-serif;
+    text-align:center;
+    margin-top:100px;
+}
+#conteudo{
+    display:none;
+}
+input{
+    padding:10px;
+}
+button{
+    padding:10px 20px;
+}
+</style>
+</head>
+<body>
+
+<h1>Uma surpresa para ti ❤️</h1>
+
+<p>Introduz a palavra-passe:</p>
+
+<input type="password" id="pass">
+<button onclick="verificar()">Entrar</button>
+
+<div id="conteudo">
+    <h2>Surpresa desbloqueada ❤️</h2>
+    <a href="https://youtube.com" target="_blank">
+        Ver vídeo
+    </a>
+</div>
+
+<script>
+function verificar(){
+    if(document.getElementById("pass").value=="borboleta"){
+        document.getElementById("conteudo").style.display="block";
+    }else{
+        alert("Palavra-passe incorreta!");
+    }
+}
+</script>
+
+</body>
+</html>
